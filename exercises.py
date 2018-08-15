@@ -56,8 +56,7 @@ def check_login(login):
         return print('Login Success')
     else:
         return print('Re-enter Login')
-check_login =('DevLeague')
-
+check_login('DevLeague')
 
 #6 Function malware_type
 #Create a function named malware_type which takes a parameter malware. 
@@ -67,7 +66,14 @@ check_login =('DevLeague')
 #if malware is virus: 'Do not share files'
 #default message 'I hope you backed up your data'
 
-malware_type = 'malware'
+def malware_type(malware):
+    if(malware == 'adware'):
+        return print('Low Threat')
+    elif(malware == 'virus'):
+        return print('Do not share files')
+    else:
+        return print('I hope you backed up your data')
+malware_type('virus')
 
 
 #7 Function encryption
